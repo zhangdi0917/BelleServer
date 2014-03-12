@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+
+    <servlet>
+        <servlet-name>GetBelles</servlet-name>
+        <servlet-class>com.jesson.sexybelle.servlet.GetBelles</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>RandomGetBelles</servlet-name>
+        <servlet-class>com.jesson.sexybelle.servlet.RandomGetBelles</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>InsertBelles</servlet-name>
+        <servlet-class>com.jesson.sexybelle.servlet.InsertBelles</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>GetSeries</servlet-name>
+        <servlet-class>com.jesson.sexybelle.servlet.GetSeriesList</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>GetSeries</servlet-name>
+        <url-pattern>/series/list</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>InsertBelles</servlet-name>
+        <url-pattern>/belle/insert</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>RandomGetBelles</servlet-name>
+        <url-pattern>/belle/random</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>GetBelles</servlet-name>
+        <url-pattern>/belle/list</url-pattern>
+    </servlet-mapping>
+
+</web-app>
